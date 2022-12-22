@@ -12,6 +12,10 @@ namespace Open_Closed
         {
             DocumentoContable unaFactura = new DocumentoContable(TipoDocumentoContable.Factura, 55532);
             Console.WriteLine(unaFactura.Descripcion());
+
+            DocumentoContable unaNotaCredito = new DocumentoContable(TipoDocumentoContable.NotaCredito, 55532);
+            Console.WriteLine(unaNotaCredito.Descripcion());
+
             Console.ReadKey();
         }
     }
