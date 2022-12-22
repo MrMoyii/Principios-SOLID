@@ -6,29 +6,22 @@ using System.Threading.Tasks;
 
 namespace Open_Closed
 {
-    internal class DocumentoContable
+    /*Aca samos el enum del TipoDocumentoContable y le delegamos la tarea de
+     decirno que tipo es a cada tipo de documento contable.*/
+
+    /*Entonces hacemos esta clase y metodo abstractos para que luego en cada
+     clase que se herede de esta, implemente su logica.*/
+    internal abstract class DocumentoContable
     {
-        public DocumentoContable(TipoDocumentoContable tipo, int numero)
+        
+        public DocumentoContable(int numero)
         {
-            Tipo= tipo;
-            Numero= numero;
+            Numero = numero;
         }
 
         public DateTime Fecha { get; set; }
         public double Importe { get; set; }
         public int Numero { get; set; }
-        public TipoDocumentoContable Tipo { get;set; }
-        public string Descripcion()
-        {
-            switch (Tipo)
-            {
-                case TipoDocumentoContable.Factura:
-                    return $"FC-{Numero}";
-                case TipoDocumentoContable.NotaCredito:
-                    return $"NC-{Numero}";
-                default:
-                    return "N/D";
-            }
-        }
+        public abstract string Descripcion();
     }
 }

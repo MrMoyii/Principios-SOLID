@@ -10,11 +10,33 @@ namespace Open_Closed
     {
         static void Main(string[] args)
         {
-            DocumentoContable unaFactura = new DocumentoContable(TipoDocumentoContable.Factura, 55532);
+            /* --------------------Teoría--------------------*/
+            /*  
+                El COMPORTAMIENTO de una entidad debe poder ser ALTERADO
+                SIN TENER QUE MODIFICAR SU PROPIO CÓDIGO FUENTE.
+             
+                Una CLASE NO SE PUEDE MODIFICAR, PERO SI SE PUEDE EXTENDER
+                haciaendo uso de la herencia.
+
+                Una clase SOLO DEBE SER MODIFICADA SI EXISTE UN BUG, para no
+                romper funcionalidades en módulos dependientes.
+            
+                Se centra en MANTENER BAJO AL ACOPLAMIENTO.
+            */
+            /* --------------------Teoría--------------------*/
+
+
+            DocumentoContable unaFactura = new Factura(12331);
             Console.WriteLine(unaFactura.Descripcion());
 
-            DocumentoContable unaNotaCredito = new DocumentoContable(TipoDocumentoContable.NotaCredito, 55532);
+            DocumentoContable unaNotaCredito = new NotaCredito(22314);
             Console.WriteLine(unaNotaCredito.Descripcion());
+
+
+            /*Ahora cuando tengamos que agregar un nuevo tipo de documento contable
+              solo debemos crear la clase y hacer que herede de DocumentoContable*/
+            DocumentoContable unaNotaDebito = new NotaDebito(42314);
+            Console.WriteLine(unaNotaDebito.Descripcion());
 
             Console.ReadKey();
         }
