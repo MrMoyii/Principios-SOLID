@@ -26,5 +26,9 @@ namespace Liskov_Substitution
         {
             return $"Remito nro {Numero} de fecha {Fecha.ToShortDateString()} con {CantBultos} bultos";
         }
+        public string Imprimir()
+        {
+            return $"Imprimiendo {Descripcion()}";
+        }
     }
 }
