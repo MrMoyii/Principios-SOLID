@@ -12,11 +12,11 @@ namespace Liskov_Substitution
         {
             Console.WriteLine(unRemito.Imprimir());
         }
-        public void ImprimirFactura(Remito unaFactura)
+        public void ImprimirFactura(Factura unaFactura)
         {
             Console.WriteLine(unaFactura.Imprimir());
         }
-        public void ImprimirNotaCredito(Remito unaNotaCredito)
+        public void ImprimirNotaCredito(NotaCredito unaNotaCredito)
         {
             Console.WriteLine(unaNotaCredito.Imprimir());
         }

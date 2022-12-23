@@ -30,6 +30,19 @@ namespace Liskov_Substitution
                 una VIOLACIÓN al principio.
             */
             /* --------------------Teoría--------------------*/
+
+            Impresora impresora = new Impresora();
+
+            Remito rto = new Remito(3331, DateTime.Now,10);
+            Factura fc = new Factura(66423, DateTime.Now);
+            NotaCredito nc = new NotaCredito(441, DateTime.Now);
+
+            impresora.ImprimirRemito(rto);
+            impresora.ImprimirFactura(fc);
+            impresora.ImprimirNotaCredito(nc);
+
+            Console.ReadKey();
+
         }
     }
 }
