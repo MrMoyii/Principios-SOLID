@@ -34,12 +34,22 @@ namespace Liskov_Substitution
             Impresora impresora = new Impresora();
 
             Remito rto = new Remito(3331, DateTime.Now,10);
-            Factura fc = new Factura(66423, DateTime.Now);
-            NotaCredito nc = new NotaCredito(441, DateTime.Now);
+            Documento fc = new Factura(66423, DateTime.Now);
+            Documento nc = new NotaCredito(441, DateTime.Now);
+            Documento nd = new NotaDebito(345, DateTime.Now);
+
+            /*Si todos los metodos de documento que utilizo me sirven
+              es correcta la declaracion y es correcta el uso del
+              principio de sustitucion de Liskov.
+              Si yo tuviera que usar un metodo de una clase derivada
+              que no sea parte de la clase documento, no estaria 
+              respetando este principio.*/
+
 
             impresora.ImprimirRemito(rto);
             impresora.ImprimirDocumento(fc);
             impresora.ImprimirDocumento(nc);
+            impresora.ImprimirDocumento(nd);
 
             Console.ReadKey();
 
