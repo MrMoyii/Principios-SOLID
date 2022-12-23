@@ -19,7 +19,7 @@ namespace Liskov_Substitution
           modificando el comportamiento de una funcion de la clase padre.*/
         public override string Descripcion()
         {
-            return $"Remito nro {Numero} de fecha {Fecha.ToShortDateString()} con {CantBultos};
+            return $"Remito nro {Numero} de fecha {Fecha.ToShortDateString()} con {CantBultos}";
         }
     }
 }
