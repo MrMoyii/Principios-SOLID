@@ -12,13 +12,18 @@ namespace Liskov_Substitution
         {
             Console.WriteLine(unRemito.Imprimir());
         }
-        public void ImprimirFactura(Factura unaFactura)
+        /*Aca simplificamos para que impresora reciba un documento
+          y asi podemos respetar la herarquia, asiendo que no importa
+          que docuento contable se reciba, este puede imprimirse.*/
+        public void ImprimirDocumento(Documento unaDocumento)
         {
-            Console.WriteLine(unaFactura.Imprimir());
+            Console.WriteLine(unaDocumento.Imprimir());
         }
-        public void ImprimirNotaCredito(NotaCredito unaNotaCredito)
-        {
-            Console.WriteLine(unaNotaCredito.Imprimir());
-        }
+
+        
+        //public void ImprimirNotaCredito(NotaCredito unaNotaCredito)
+        //{
+        //    Console.WriteLine(unaNotaCredito.Imprimir());
+        //}
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liskov_Substitution
 {
-    internal class Documento
+    internal abstract class Documento
     {
         protected string _sigla;
         public Documento(int numero, DateTime fecha)

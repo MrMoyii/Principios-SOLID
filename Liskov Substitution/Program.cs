@@ -38,8 +38,8 @@ namespace Liskov_Substitution
             NotaCredito nc = new NotaCredito(441, DateTime.Now);
 
             impresora.ImprimirRemito(rto);
-            impresora.ImprimirFactura(fc);
-            impresora.ImprimirNotaCredito(nc);
+            impresora.ImprimirDocumento(fc);
+            impresora.ImprimirDocumento(nc);
 
             Console.ReadKey();
 
