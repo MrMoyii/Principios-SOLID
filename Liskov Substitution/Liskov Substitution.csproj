@@ -7,7 +7,7 @@
     <ProjectGuid>{EAD4D958-8C3A-43E3-B763-ED7F3AF75534}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Liskov_Substitution</RootNamespace>
-    <AssemblyName>Liskov_Substitution</AssemblyName>
+    <AssemblyName>Liskov Substitution</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
