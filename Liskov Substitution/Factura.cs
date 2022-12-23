@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liskov_Substitution
 {
-    internal class Factura : Documento
+    internal class Factura : DocumentoContable
     {
         public Factura(int numero, DateTime fecha) : base(numero, fecha)
         {

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Liskov_Substitution
 {
-    internal abstract class Documento
+    internal abstract class DocumentoContable
     {
         protected string _sigla;
-        public Documento(int numero, DateTime fecha)
+        public DocumentoContable(int numero, DateTime fecha)
         {
             Numero = numero;
             Fecha = fecha;

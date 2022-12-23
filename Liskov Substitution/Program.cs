@@ -34,9 +34,9 @@ namespace Liskov_Substitution
             Impresora impresora = new Impresora();
 
             Remito rto = new Remito(3331, DateTime.Now,10);
-            Documento fc = new Factura(66423, DateTime.Now);
-            Documento nc = new NotaCredito(441, DateTime.Now);
-            Documento nd = new NotaDebito(345, DateTime.Now);
+            DocumentoContable fc = new Factura(66423, DateTime.Now);
+            DocumentoContable nc = new NotaCredito(441, DateTime.Now);
+            DocumentoContable nd = new NotaDebito(345, DateTime.Now);
 
             /*Si todos los metodos de documento que utilizo me sirven
               es correcta la declaracion y es correcta el uso del

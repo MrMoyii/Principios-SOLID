@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liskov_Substitution
 {
-    internal class NotaDebito : Documento
+    internal class NotaDebito : DocumentoContable
     {
         public NotaDebito(int numero, DateTime fecha) : base(numero, fecha)
         {
