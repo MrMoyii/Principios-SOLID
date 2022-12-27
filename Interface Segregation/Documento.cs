@@ -8,7 +8,7 @@ namespace Interface_Segregation
 {
     internal abstract class Documento
     {
-        public Documento(DateTime fecha, int numero)
+        public Documento(int numero, DateTime fecha)
         {
             Fecha = fecha;
             Numero = numero;
