@@ -12,6 +12,7 @@ namespace Interface_Segregation
        
         public string CAI { get; set; }
         
+        //Est esta mal!!
         public override void EnviarPorEmail()
         {
            //esta peracion no es valida para factura.
