@@ -11,16 +11,16 @@ namespace Interface_Segregation
         public Factura(int numero, DateTime fecha) : base(numero, fecha) { }
        
         public string CAI { get; set; }
-        
-        //Est esta mal!!
-        public override void EnviarPorEmail()
-        {
-           //esta peracion no es valida para factura.
-        }
+
+        ////Est esta mal!!
+        //public override void EnviarPorEmail()
+        //{
+        //   //esta peracion no es valida para factura.
+        //}
 
         public override void Imprimir()
         {
-            Console.WriteLine($"Imprimiend por email la factura {Numero} del dia {Fecha.ToShortDateString()}");
+            Console.WriteLine($"Imprimiend por email la factura {Numero} del dia {Fecha.ToShortDateString()} con CAI {CAI}");
         }
     }
 }

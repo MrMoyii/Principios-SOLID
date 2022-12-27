@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Documento.cs" />
+    <Compile Include="Factura.cs" />
+    <Compile Include="FacturaElectronica.cs" />
+    <Compile Include="IEmaileable.cs" />
+    <Compile Include="IImprimible.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

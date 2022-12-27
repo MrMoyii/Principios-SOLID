@@ -24,6 +24,19 @@ namespace Interface_Segregation
                 de una INTERFACE QUE LUEGO NO USARÁN.
             */
             /* --------------------Teoría--------------------*/
+
+            Factura factura = new Factura(12344, DateTime.Now);
+            factura.CAI = "234324324";
+
+            FacturaElectronica facturaElectronica = new FacturaElectronica(12344, DateTime.Now);
+            facturaElectronica.CAE = "666345444";
+
+            facturaElectronica.Imprimir();
+            facturaElectronica.EnviarPorEmail();
+            factura.Imprimir();
+            //factura.EnviarPorEmail(); //Esto es un errror y se debe evitar.
+
+            Console.ReadKey();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface_Segregation
 {
-    internal abstract class Documento
+    internal abstract class Documento : IImprimible
     {
         public Documento(int numero, DateTime fecha)
         {
@@ -16,7 +16,7 @@ namespace Interface_Segregation
 
         public DateTime Fecha { get; set; }
         public int Numero { get; set; }
+
         public abstract void Imprimir();
-        public abstract void EnviarPorEmail();
     }
 }
