@@ -13,5 +13,10 @@ namespace Dependency_Inversion
             CoodigoPago = coodigoPago;
         }
         public string CoodigoPago { get; set; }
+
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo factura de luz con código de pago nro {CoodigoPago} con un importe de {Importe}");
+        }
     }
 }

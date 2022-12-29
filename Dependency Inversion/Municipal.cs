@@ -13,5 +13,10 @@ namespace Dependency_Inversion
             Partida = partida;
         }
         public string Partida { get; set; }
+
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo impuest municipal de partida {Partida} por un importe de {Importe}");
+        }
     }
 }

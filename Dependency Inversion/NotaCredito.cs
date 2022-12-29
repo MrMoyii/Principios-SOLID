@@ -13,6 +13,11 @@ namespace Dependency_Inversion
             _sigla = "NC";
         }
 
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo nota de credito {Numero} del {Fecha} por un importe de {Importe}");
+        }
+
         public override double Total()
         {
             return Importe * 1.21 * -1;//Ejemplo
