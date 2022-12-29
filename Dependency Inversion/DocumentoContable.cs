@@ -8,6 +8,7 @@ namespace Dependency_Inversion
 {
     internal abstract class DocumentoContable
     {
+        protected string _sigla;
         public DocumentoContable(int numero, DateTime fecha, double importe)
         {
             Numero = numero;
