@@ -8,14 +8,14 @@ namespace Dependency_Inversion
 {
     internal class ReciboSueldo
     {
-        public ReciboSueldo(int legago, double total)
+        public ReciboSueldo(int legajo, double total)
         {
-            Legago = legago;
+            Legajo = legajo;
             Total = total;
         }
 
         public double Total { get; set; }
-        public int Legago { get; set; }
+        public int Legajo { get; set; }
     }
     
 }
