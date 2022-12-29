@@ -10,19 +10,19 @@ namespace Dependency_Inversion
     {
         public void Imprimir(Factura factura)
         {
-            Console.WriteLine($"Imprimiendo factura {factura.Numero} del {factura.Fecha} por un importe de {factura.Importe}");
+            
         }
         public void Imprimir(NotaCredito notaCredito)
         {
-            Console.WriteLine($"Imprimiendo nota de credito {notaCredito.Numero} del {notaCredito.Fecha} por un importe de {notaCredito.Importe}");
+            
         }
         public void Imprimir(FacturaLuz facturaLuz)
         {
-            Console.WriteLine($"Imprimiendo factura de luz con código de pago nro {facturaLuz.CoodigoPago} con un importe de {facturaLuz.Importe}");
+            
         }
         public void Imprimir(Municipal municipal)
         {
-            Console.WriteLine($"Imprimiendo impuest municipal de partida {municipal.Partida} por un importe de {municipal.Importe}");
+            
         }
         public void Imprimir(ReciboSueldo reciboSueldo)
         {
