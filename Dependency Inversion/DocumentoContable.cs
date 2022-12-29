@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dependency_Inversion
 {
-    internal abstract class DocumentoContable
+    internal abstract class DocumentoContable : IImprimible
     {
         protected string _sigla;
         public DocumentoContable(int numero, DateTime fecha, double importe)
@@ -19,6 +19,8 @@ namespace Dependency_Inversion
         public DateTime Fecha { get; set; }
         public double Importe { get; set; }
         public int Numero { get; set; }
+
+        public abstract void Imprimir();
 
         public abstract double Total();
     }
