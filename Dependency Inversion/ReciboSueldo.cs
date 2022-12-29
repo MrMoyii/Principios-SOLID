@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dependency_Inversion
 {
-    internal class ReciboSueldo
+    internal class ReciboSueldo : IImprimible
     {
         public ReciboSueldo(int legajo, double total)
         {
@@ -16,6 +16,11 @@ namespace Dependency_Inversion
 
         public double Total { get; set; }
         public int Legajo { get; set; }
+
+        public void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo recibo de sueldo del legajo {Legajo} por un total de {Total}");
+        }
     }
     
 }

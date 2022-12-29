@@ -8,29 +8,10 @@ namespace Dependency_Inversion
 {
     internal class Impresora
     {
-        public void Imprimir(Factura factura)
+        public void Imprimir(IImprimible imprimible)
         {
-            
-        }
-        public void Imprimir(NotaCredito notaCredito)
-        {
-            
-        }
-        public void Imprimir(FacturaLuz facturaLuz)
-        {
-            
-        }
-        public void Imprimir(Municipal municipal)
-        {
-            
-        }
-        public void Imprimir(ReciboSueldo reciboSueldo)
-        {
-            Console.WriteLine($"Imprimiendo recibo de sueldo del legajo {reciboSueldo.Legajo} por ");
-        }
-        public void Imprimir(Remito remito)
-        {
-            Console.WriteLine($"Imprimiendo remito {remito.Numero} de fecha {remito.Fecha} con un total de {remito.CantBultos} ");
+            //La Impresora llama al metodo Imprimir de la clase que implemente la interfaz Imprimible pasado por parametro.
+            imprimible.Imprimir();
         }
     }
 }
