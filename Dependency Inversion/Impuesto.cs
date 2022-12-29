@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dependency_Inversion
 {
-    internal class Impuesto
+    internal abstract class Impuesto
     {
         public Impuesto(double importe)
         {
