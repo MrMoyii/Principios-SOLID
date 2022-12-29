@@ -7,7 +7,7 @@
     <ProjectGuid>{1CFC7553-3128-4FE0-AE45-197C853655E1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Dependency_Inversion</RootNamespace>
-    <AssemblyName>Dependency_Inversion</AssemblyName>
+    <AssemblyName>Dependency Inversion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
